@@ -23,7 +23,7 @@ a {
     top: 0;
     width: 100vw;
 }
-  .page-link {
+  .nav-link {
     cursor: pointer;
   }
   .navbar {
@@ -37,43 +37,16 @@ a {
     width:100vw;
     z-index: 99;
   }
-  nav.fixed {
-    bottom: inherit;
-    left: 0;
-    position: fixed;
-    top: 0;
-  }
-  nav.fixed.desk {
-    animation: popDown 0.5s;
-  }
-  nav .link-wrap {
-    background: #333;
-    height: 0;
-    max-width: 1200px;
-    overflow: hidden;
-    position: absolute;
-    top: 53px;
-    transition: height 0.3s ease-out;
-    width: 100%;
-  }
-  nav .link-wrap.visible {
-    height: 220px;
-  }
-  nav .link-wrap div {
-    cursor: pointer;
-    font-size: 12pt;
-    padding: 12px 20px;
-    text-transform: uppercase;
-    transition: color 0.5s;
-  }
-  nav .link-wrap div:first-child {
-    padding: 25px 20px 12px 20px;
-  }
-  nav .link-wrap div:hover {
-    color: #e31b6d;
+  li a{
+    font-size: 13pt;
+    margin: 10pt;
   }
 
-  nav .active {
+  li a:hover {
+      color: #e31b6d;
+  }
+
+ .active {
     color: #e31b6d;
   }
 
@@ -135,4 +108,12 @@ section:nth-of-type(1) .button {
   margin-bottom: 53px;
   padding: 12px 40px 12px 15px;
   position: relative;
+}
+.heading{
+  display: block;
+  font-size: 30pt;
+}
+
+div .image-me{
+  margin-top: 50pt;
 }
