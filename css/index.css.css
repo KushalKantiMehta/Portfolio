@@ -119,6 +119,8 @@ section:nth-of-type(1) .button .mdi {
 .heading{
   display: block;
   font-size: 30pt;
+  z-index: 2;
+  color: #616161;
 }
 
 div .image-me{
@@ -153,4 +155,40 @@ line-height: 20pt;
   margin: 0 0 20px 0;
   color: #616161;
   align-self: center;
+}
+#skills{
+  background-color: #f5f5f5;
+}
+section:nth-of-type(3) .bar.fill {
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-color: #00a1a7;
+  opacity: 1;
+  padding: 10pt;
+}
+section:nth-of-type(3) .bar {
+  align-items: flex-end;
+  background-color: #ddd;
+  color: #666;
+  font-size: 7pt;
+  padding: 10pt;
+  height: 22px;
+  margin: 0 0 12px 0;
+  position: relative;
+}
+section:nth-of-type(3) .bar .tag {
+  left: 0;
+  position: absolute;
+  top: 0;
+  padding: 10pt;
+  background-color: #04c2c9;
+  color: #fff;
+  height: 100%;
+  width: 110px;
+  width: 70px;
+}
+.skills-container-list{
+  margin-left: 20%;
+  margin-right: 20%;
 }
