@@ -16,7 +16,8 @@ a {
   }
 
 .canvas {
-    background: url(http://findmatthew.com/style/../img/filler.png) center center/cover;
+    background: url(../Images/background.png) center center/cover;
+    background-color:#34495E;
     height: 100%;
     left: 0;
     position: absolute;
@@ -109,6 +110,12 @@ section:nth-of-type(1) .button {
   padding: 12px 40px 12px 15px;
   position: relative;
 }
+section:nth-of-type(1) .button .mdi {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  transition: transform 0.3s;
+}
 .heading{
   display: block;
   font-size: 30pt;
@@ -116,4 +123,34 @@ section:nth-of-type(1) .button {
 
 div .image-me{
   margin-top: 50pt;
+}
+
+section:nth-of-type(1) .button:hover .mdi {
+  transform: rotate(90deg);
+}
+
+div .about-me-text{
+color: #616161; 
+font-size: 20pt;
+line-height: 20pt;
+
+}
+.about-me .link-primary .text a:hover{
+  color: #04c2c9;
+ 
+}
+.about-me-text a{
+  color:#e31b6d;
+ 
+}
+.skill-text{
+  font-size: 20pt;
+  line-height: 60pt;
+}
+
+.skill-text div{
+
+  margin: 0 0 20px 0;
+  color: #616161;
+  align-self: center;
 }
