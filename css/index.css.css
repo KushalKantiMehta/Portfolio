@@ -192,3 +192,58 @@ section:nth-of-type(3) .bar .tag {
   margin-left: 20%;
   margin-right: 20%;
 }
+.space{
+  height: 30pt;
+}
+#Projects-images{
+  display: flex;
+  max-width: 1170px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+}
+.project-container{
+  width: 390px;
+  height: 300px;
+}
+#zigzag-project{
+background-image: url(../images/zigzzag.png);
+background-size:100%;
+background-repeat: no-repeat;
+}
+.project-individual {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-animation-name: project-hover-out;
+  animation-name: project-hover-out;
+}
+.project-individual :hover{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+#vibewallpaper-project{
+background-image: url(../images/vibewallpaper.png); 
+background-size:100%;
+background-repeat: no-repeat; 
+}
+#portfolio-project{
+  background-image: url(../images/portfolio.png);
+  background-size:100%;
+background-repeat: no-repeat;
+}
+section:nth-of-type(5) {
+  background: #252934;
+  color: #fff;
+  padding-top: 175px;
+}
+section:nth-of-type(5) svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
