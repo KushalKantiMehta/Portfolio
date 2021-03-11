@@ -43,10 +43,10 @@
                        <a class="nav-link" href="#skills">SKILLS</a>
                      </li>
                      <li class="nav-item">
-                      <a class="nav-link" href="#">PROJECTS</a>
+                      <a class="nav-link" href="#projects">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">CONTACT ME</a>
+                      <a class="nav-link" href="#contact">CONTACT ME</a>
                     </li>
                     </ul>
                </div> 
@@ -55,7 +55,7 @@
               <br>I am a Developer.
               
             </div>
-            <div class="button page-link">
+            <div class="button page-link" dest="projects">
               View my Work<i class="mdi mdi-arrow-right"></i>
             </div>
             
@@ -68,7 +68,7 @@
           <br>
           I have a serious passion for developing websites,apps and games.
           <br>
-          <a class="link-primary text">Lets make something amazing together!</a>
+          <a class="link-primary text" href="#contact">Lets make something amazing together!</a>
         </div>
       </section>
       <section id="skills">
@@ -137,6 +137,7 @@
       <section id="projects">
         <div class="heading">PROJECTS</div>
         <div class="space"></div>
+        <div class="space"></div>
         <div id="Projects-images">
            <div id="zigzag-project" class="project-container">
               <div class="project-individual">
@@ -160,12 +161,27 @@
               </div>
             </div>
          </div>
+         <div class="space"></div>
       </section>
       <section id="contact">
         <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
           <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
         </svg>
         <div class="heading">CONTACT ME</div>
+        <div class="space"></div>
+        <div class="subheading">Have a question or want to work together? Email me!</div>
+        <div class="space"></div>
+        <form id="contact-form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="text" name="name" placeholder="Your Name" class="contact-form-input" id="name">
+          <input type="email" name="email" placeholder="Your Email Address" class="contact-form-input" id="email">
+          <textarea type="text" name="message" placeholder="Your Message" class="contact-form-input" id="message"></textarea>
+          <div id="success-hidden">
+            <div id="success-text">Your message was sent successfully. Thanks!</div>
+            <div id="success-close"></div>
+         </div>
+          <button type="submit" id="submit-button" class="button">SUBMIT</button>
+        </form>
       </section>
     </div>
     

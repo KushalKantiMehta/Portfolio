@@ -16,7 +16,9 @@ a {
   }
 
 .canvas {
-    background: url(../Images/background.png) center center/cover;
+    background-image: url(../Images/background.png);
+    background-size:100%;
+    background-repeat: no-repeat; 
     background-color:#34495E;
     height: 100%;
     left: 0;
@@ -64,19 +66,18 @@ a {
     div {
         display: block;
     }
-
+   
     .button {
-      margin-top: 10pt;
+      border: 2px solid #e31b6d;
       background: transparent;
-      border: 2px solid #fff;
+      color: #e31b6d;
       box-sizing: inherit;
       cursor: pointer;
-      color: #e31b6d;
       display: inline-block;
-      font-size: 18pt;
-      padding: 5px 10px;
+      font-size: 13pt;
+      padding: 10px 20px;
       transition: all 0.5s;
-    }
+  }
     .button:hover {
       background-color: #04c2c9;
       border-color: #04c2c9;
@@ -242,8 +243,47 @@ section:nth-of-type(5) {
   color: #fff;
   padding-top: 175px;
 }
+section:nth-of-type(5) .heading {
+ color: #fff;
+}
 section:nth-of-type(5) svg {
   left: 0;
   position: absolute;
   top: 0;
+}
+.subheading{
+color: #04c2c9;
+font-size: 15pt;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 530px;
+}
+section:nth-of-type(5) form {
+  margin: 40px auto 0 auto;
+  min-width: 95%;
+}
+.contact-form-input {
+  width: 500px;
+  border: none;
+  padding: 10px 15px;
+  background-color: #1e242c;
+  caret-color: #fff;
+  font-size: 12pt;
+  margin-bottom: 5px;
+  color: #fff;
+}
+section:nth-of-type(5) .button {
+  float: right;
+  font-size: 12pt;
+  margin: 20px 0 0 0;
+  outline: 0;
+  padding: 10px 30px;
+}
+#message {
+  height: 150px;
+  min-width: 500px;
+  resize: none;
 }
