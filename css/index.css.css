@@ -287,3 +287,68 @@ section:nth-of-type(5) .button {
   min-width: 500px;
   resize: none;
 }
+#success-hidden{
+  display: none;
+ padding: 8pt;
+background-color: #4BB543;
+width: inherit;
+}
+#success-text {
+  text-align: center;
+  width: 100%;
+  padding-left: 36px;
+}
+footer {
+  background: #1b242f;
+  padding: 70px 0 50px 0;
+  position: relative;
+}
+icon-container{
+  align-self:center;
+  display: inline-flex;
+}
+
+.icon-wrap a{
+  display: inline-block;
+  align-items: center;
+  padding: 20pt;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .icon-wrap .icon {
+  margin: 0 17px;
+}
+#linkedin {
+  background-image: url(../images/linkedin.png);
+  background-size: 100%;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;  
+}
+#github{
+  background-image: url(../images/github.png);
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+  background-repeat: no-repeat;  
+}
+#instagram{
+  background-image: url(../images/instagram.png);
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+  background-repeat: no-repeat;  
+}
+.iconspace{
+  background-color: #262f38;
+  width: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.iconspace:hover{
+  background-color: #04c2c9;
+  width: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
