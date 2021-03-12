@@ -17,7 +17,7 @@ a {
 
 .canvas {
     background-image: url(../Images/background.png);
-    background-size:100%;
+    background-size:100vm;
     background-repeat: no-repeat; 
     background-color:#34495E;
     height: 100%;
@@ -208,6 +208,7 @@ section:nth-of-type(3) .bar .tag {
   width: 390px;
   height: 300px;
 }
+
 #zigzag-project{
 background-image: url(../images/zigzzag.png);
 background-size:100%;
@@ -303,11 +304,6 @@ footer {
   padding: 70px 0 50px 0;
   position: relative;
 }
-icon-container{
-  align-self:center;
-  display: inline-flex;
-}
-
 .icon-wrap a{
   display: inline-block;
   align-items: center;
@@ -352,3 +348,9 @@ footer .icon-wrap .icon {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+  @media screen and (max-width: 400px) {
+    #canvas{
+      width: 100vw;
+    }
+  }
